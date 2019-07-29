@@ -14,7 +14,9 @@ def long_planeteer_calls(arr)
   arr.any?{|ele| ele.length > 4}
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  arr.each do |ele|
+     return ele if cheese_types.include?(ele)
+    end
 end
